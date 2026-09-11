@@ -20,9 +20,12 @@ with the producer judging playable results and directing each iteration.
 
 ## Status
 
-The initial concept exploration is complete. The first milestone is one
-playable musical encounter; there is no playable implementation yet.
+The initial concept exploration is complete. We are qualifying development
+tools and music-generation dependencies before the first playable musical
+encounter; there is no playable implementation yet.
 
 - [First playable: agreed brief](https://github.com/vince-hardwick/Musical_RPG/issues/1)
 - [Shared terminology](CONTEXT.md)
 - [Design decisions](docs/adr/)
+- [Development readiness and dependencies](docs/research/local-development-readiness.md)
+- [Foundational source conversations (orientation only)](docs/reference/source-chats/README.md)
