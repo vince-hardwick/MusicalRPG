@@ -16,3 +16,18 @@ read `docs/agents/triage-labels.md`.
 
 Use a single-context layout. Before exploring domain concepts or
 design decisions, read `docs/agents/domain.md`.
+
+## Scratch files
+
+Store untracked repository scratch artefacts only in the existing
+`scratch/` directory at the repository root. If it is absent, stop and
+ask where to work.
+
+Use `scratch/` for ephemeral or disposable files, including archived/cold
+or disposable single-use handoff documents. It is not a general store
+for active working records.
+
+This location overrides alternative scratch or temporary locations in
+invoked skills, including the handoff skill's OS temporary directory.
+
+Do not treat every ignored path as disposable scratch.
