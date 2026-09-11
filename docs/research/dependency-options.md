@@ -22,6 +22,9 @@ an installation route is not evidence that it has worked on this machine.
 
 ## Game development options
 
+The [Godot fit assessment](godot-fit-assessment.md) examines its graphics,
+animation, musical timing and autonomous iteration against this project's brief.
+
 | Candidate | Windows dependencies and hardware | Installation and observation route |
 | --- | --- | --- |
 | Browser game using TypeScript, a renderer such as Three.js, and Web Audio | A supported Node.js runtime, project packages and a modern browser. Vite documents Node 20.19+ or 22.12+; current Playwright documents recent 22.x, 24.x or 26.x and Windows 11+. Three.js's WebGL renderer requires WebGL 2. These are tool requirements, not a guarantee of scene performance. | Vite provides npm installation, a local development server and production builds. Playwright supports browser input and inspection, screenshots, traces, and headed or headless runs. It can use installed Edge or Chrome. This gives a documented route for an automated browser play loop without a desktop game editor. [Vite](https://vite.dev/guide/), [Three.js](https://threejs.org/docs/pages/WebGLRenderer.html), [Playwright installation](https://playwright.dev/docs/intro), [browser support](https://playwright.dev/docs/browsers). |

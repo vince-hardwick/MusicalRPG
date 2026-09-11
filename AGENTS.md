@@ -31,3 +31,7 @@ This location overrides alternative scratch or temporary locations in
 invoked skills, including the handoff skill's OS temporary directory.
 
 Do not treat every ignored path as disposable scratch.
+
+## Closeout
+
+End every final response with a concise recommended next action supported by the task's routed owners.
