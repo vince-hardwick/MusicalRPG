@@ -91,7 +91,8 @@ The likely human steps are conditional on the eventual shortlist:
 The bounded Godot qualification is complete; its scope and limits are recorded
 in the readiness assessment linked above. The music-provider assessment records
 the completed three-render trial, positive producer audition and contextual
-feedback on the Godot fixture. Its [next assessment](music-provider-assessment.md#adaptive-music-capability-assessment)
-examines API capabilities and a phased route to coherent music generated in response
-to an evolving scene. The accepted cut-in/departure revision remains a small
-integration check within that broader question.
+feedback on the Godot fixture. Its [adaptive-music assessment](music-provider-assessment.md#adaptive-music-capability-assessment)
+now links the completed capability research and proposed phased experiments for
+coherent music generated in response to an evolving scene. The accepted
+cut-in/departure revision remains a small integration check within that broader
+question.

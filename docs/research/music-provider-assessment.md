@@ -363,6 +363,14 @@ audio durations were visually checked. The producer's listening result is below;
 independent verification of the first-word timestamps remains outstanding. The
 listening feedback does not establish those precise offsets.
 
+All three retained trial requests explicitly set `store_for_inpainting=false`.
+A targeted read of Take 3's completion event found a returned song ID, but this
+does not establish that its audio was stored for reference reuse. A contextual
+continuation trial must verify retained-source availability or separately price
+and authorise an upload/new stored generation; it must not assume that possession
+of the local audio or returned ID makes inpainting available. This finding was
+verified from the request records and non-audio completion metadata on 12 September.
+
 ### Producer review and next assessment
 
 The producer reported: "The words were clear, delivery was fine, all three were
@@ -510,17 +518,11 @@ coherence must be assessed across both expected and responsive transitions.
 Improving the fade-out of a saved recording addresses only a small integration
 detail and cannot qualify those requirements.
 
-The next work is to review the [foundational conversations](../reference/source-chats/README.md),
-the [agreed brief](https://github.com/vince-hardwick/MusicalRPG/issues/1) and its
-linked domain owners, then research the full relevant ElevenLabs API capabilities.
-Assess whether a single provider or a combination of components can meet these
-demands. Where ElevenLabs leaves gaps, investigate candidates suggested in the
-original sources and prior research, verifying their current capabilities against
-primary sources rather than adopting archived product or latency claims.
-
-Produce a phased assessment plan that identifies the evidence needed to select
-the best combination of tools, platforms and services. Distinguish documented
-controls and guarantees, measured behaviour, provider claims and untested
-possibilities. The plan should address coherent adaptation during ongoing music,
-not just independent phrase generation and playback transitions. Further paid
-trials remain subject to case-by-case approval; the three-request trial is complete.
+The [capability assessment and phased plan](adaptive-music-capability-assessment.md)
+reviews all four foundational captures, the original prompts and initial grilling,
+the routed brief, and current primary sources for ElevenLabs and the earlier
+alternatives. It owns the resulting comparison and proposed experiments, separating
+documented controls, provider claims, measured behaviour and untested possibilities.
+Its recommendations remain proposals; no permanent provider or architecture is
+selected. Further paid trials require fresh case-by-case approval; the original
+three-request trial is complete.
