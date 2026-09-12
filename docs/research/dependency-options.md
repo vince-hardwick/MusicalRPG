@@ -1,10 +1,11 @@
 # Development dependency options
 
-Reviewed against official documentation on 11 September 2026. This is research
-for dependency assessment, not an engine selection, implementation plan or
-authorisation to install software or spend money. No engine installation or
-music API call was made for this review. Recheck the selected versions and
-account terms when provisioning; the linked documentation can change.
+Engine options reviewed against official documentation on 11 September 2026;
+music-provider research and qualification pointers updated on 12 September 2026.
+This is dependency research, not a permanent engine selection or authorisation
+to install software or spend money. Local execution evidence belongs in the
+[readiness assessment](local-development-readiness.md). Recheck selected versions
+and account terms when provisioning; the linked documentation can change.
 
 ## What the development loop needs
 
@@ -24,6 +25,8 @@ an installation route is not evidence that it has worked on this machine.
 
 The [Godot fit assessment](godot-fit-assessment.md) examines its graphics,
 animation, musical timing and autonomous iteration against this project's brief.
+Godot has now passed the bounded [local qualification](local-development-readiness.md#godot-qualification);
+the table below describes the broader dependency options, not their local results.
 
 | Candidate | Windows dependencies and hardware | Installation and observation route |
 | --- | --- | --- |
@@ -40,15 +43,19 @@ sung lyrics. [Chrome autoplay policy](https://developer.chrome.com/blog/autoplay
 
 ## Generated sung contributions
 
-These are candidates for measurement, not adopted providers. None of the
-documentation reviewed establishes the end-to-end delay, lyric intelligibility
-or character consistency that this particular game will achieve.
-
-| Candidate | What the official interface establishes | Access and unresolved work |
-| --- | --- | --- |
-| ElevenLabs Music | `music_v2` composition plans accept lyrics, styles and section durations. Documented chunks can be as short as three seconds. The detailed streaming endpoint returns audio chunks and optional word timestamps. Streaming transport alone does not establish how soon the first usable sung phrase arrives. | The Music API quickstart says paid users only and requires an API key. Review the applicable plan, billing and output-use terms before a bounded trial. Measure first playable audio, exact lyric delivery, transitions and voice consistency. [composition plans](https://elevenlabs.io/docs/eleven-api/guides/how-to/music/composition-plans), [detailed stream](https://elevenlabs.io/docs/api-reference/music/compose-detailed-stream), [quickstart](https://elevenlabs.io/docs/eleven-api/guides/cookbooks/music), [pricing](https://elevenlabs.io/pricing/api). |
-| Google Lyria 3.5 / Lyria 3 Clip | The Gemini API accepts custom lyrics. Clip produces 30 seconds; Lyria 3.5 generates full songs. The guide describes single-turn generation and says iterative editing through successive prompts is unsupported. This is not evidence of a continuously steerable sung dialogue service. | Both are paid API candidates: the reviewed price page lists $0.08 per Lyria 3.5 song and $0.04 per Clip request, with no free API tier for these models. A Gemini API project/key and Cloud Billing access are needed. Account eligibility and actual generation behaviour remain untested. [generation guide](https://ai.google.dev/gemini-api/docs/music-generation), [pricing](https://ai.google.dev/gemini-api/docs/pricing), [billing](https://ai.google.dev/gemini-api/docs/billing). |
-| Google Lyria RealTime | Experimental streaming music can be continuously steered, but the current documentation explicitly limits it to instrumental music. | A possible accompaniment candidate; it does not satisfy the sung-contribution requirement by itself. API access and performance would need testing if shortlisted. [RealTime guide](https://ai.google.dev/gemini-api/docs/realtime-music-generation). |
+The [music-provider assessment](music-provider-assessment.md) owns the current
+shortlist, API contracts, entry costs, output-use constraints and approved
+three-render trial. It favours ElevenLabs Music for the first short reply,
+retains Google Lyria Clip as a possible comparison, and distinguishes Lyria
+RealTime's instrumental generation from sung contributions. Three ElevenLabs
+requests succeeded; the linked note owns measured delivery delays and usage.
+The producer found all three clear and acceptable, preferring Take 3. A Godot
+fixture now exercises waiting, musical entry and cancellation with that saved
+take. The producer found entry acceptable, the longer wait stalled, and cut-in
+and departure too abrupt; the shorter wait was closer to responsive enough.
+This establishes a basic integration exercise, with musical exits and
+responsiveness still unresolved. No permanent provider choice or repeatable
+character identity has been established.
 
 Development-agent usage and a game's runtime API usage are distinct. OpenAI's
 documentation separates ChatGPT usage controls from API Platform billing and
@@ -81,9 +88,10 @@ The likely human steps are conditional on the eventual shortlist:
   analysis, timings and even transcription are useful evidence but do not
   establish that a performance is enjoyable.
 
-Before gameplay implementation, the smallest useful dependency qualification is
-one selected toolchain that can run a rendered scene, accept input, expose a
-state change, play and capture sound, and repeat after a source edit. Separately,
-an authorised short music trial should establish whether an event-specific
-sung contribution is usable. These checks remain proposed assessment work;
-this note makes no engine or service commitment.
+The bounded Godot qualification is complete; its scope and limits are recorded
+in the readiness assessment linked above. The music-provider assessment records
+the completed three-render trial, positive producer audition and contextual
+feedback on the Godot fixture. Its [next assessment](music-provider-assessment.md#adaptive-music-capability-assessment)
+examines API capabilities and a phased route to coherent music generated in response
+to an evolving scene. The accepted cut-in/departure revision remains a small
+integration check within that broader question.

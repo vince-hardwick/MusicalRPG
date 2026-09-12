@@ -2,7 +2,10 @@
 
 Reviewed on 11 September 2026 against official Godot stable documentation.
 This is a provisional dependency assessment, not an adopted engine decision.
-No Godot installation, gameplay build or music-generation call was performed.
+The [local qualification](local-development-readiness.md#godot-qualification)
+records the subsequent native graphics, input, iteration and audio checks.
+The separate [music-provider assessment](music-provider-assessment.md) records
+subsequent generated-singing trials and a disposable encounter fixture.
 The [agreed brief](https://github.com/vince-hardwick/MusicalRPG/issues/1)
 and [role-play decision](../adr/0001-musical-participation-within-role-play.md)
 provide the project requirements; source conversations remain orientation only.
@@ -12,8 +15,11 @@ provide the project requirements; source conversations remain orientation only.
 Godot is a strong candidate for the first musical encounter. It supplies the
 world, movement, animation and audio-playback machinery; we would build the
 characters' behaviour and musical direction around it. Its documented tools
-support substantial agent authoring and iteration. Actual graphics performance,
-audible output and autonomous observation on this laptop remain to be proved.
+support substantial agent authoring and iteration. Local qualification has
+established rendering, native input, edit/rerun and recorded-audio behaviour in
+a small synthetic scene. The producer confirmed clear, steady and uninterrupted
+live audio. Generated singing has since been auditioned in the linked assessment;
+representative gameplay and coherent adaptive musical interaction remain unqualified.
 Installation convenience is not a selection criterion: the producer is willing
 to install the selected software through a normal distribution channel.
 
@@ -109,7 +115,9 @@ Scenes can use readable `.tscn` files; scripts can also execute inside the edito
 The CLI supports project/scene runs, imports, exports, script checks, logs and
 debugging. These provide a credible authoring loop without making an engine MCP
 a prerequisite. A bridge should be assessed if it fills a demonstrated input or
-observation gap. These are documented routes, not a completed local qualification.
+observation gap. The local qualification exercised CLI authoring, native
+observation/input and an editor launch; exports and editor scripting remain
+documented options rather than exercised capabilities.
 [Scene format](https://docs.godotengine.org/en/stable/engine_details/file_formats/tscn.html),
 [editor scripts](https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_editor.html),
 [CLI](https://docs.godotengine.org/en/stable/tutorials/editor/command_line_tutorial.html).
@@ -149,8 +157,8 @@ latency and threading trade-offs. A web build is possible to assess separately,
 but is not automatically equivalent to the native musical experience.
 [Web export](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html).
 
-After selection and installation, qualify one small scene before substantive
-gameplay work:
+The local qualification used the following scope before substantive gameplay
+work; the linked readiness document owns its results and remaining checks:
 
 1. Run a rendered scene with a few animated actors and record frame timing under
    the intended camera and lighting; compare suitable renderers on this laptop.
